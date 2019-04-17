@@ -49,7 +49,7 @@
 				<div class="in">
 					<?php
 	
-					$conn = mysqli_connect('localhost', 'jaycho', 'dkssud1337@','db');
+					$conn = mysqli_connect('localhost', 'jaycho', '*****','db');
 					if($conn === false) {
 						die("ERROR: Could not connect. " . mysqli_connect_error());
 					}

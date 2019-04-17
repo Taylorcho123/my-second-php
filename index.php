@@ -69,15 +69,14 @@
 				<div class="in">
 					<form action="process_create.php" method="POST">
 						<p><input type="text" name="name" placeholder="Who?" /></p>
-						<p><textarea name="post" rows="5" cols="47" placeholder="What's Happening?">
-						</textarea></p>
+						<p><textarea name="post" rows="5" cols="47" placeholder="What's Happening?"></textarea></p>
 						<input class="button" name="submit" type="submit" value="Upload!" />
 					</form>
 				</div>
 				<br><br>
 
 				<?php
-	 			$conn = mysqli_connect('localhost', 'jaycho', 'dkssud1337@', 'db');
+	 			$conn = mysqli_connect('localhost', 'jaycho', '******', 'db');
 	 			$sql = "SELECT * FROM Posts ORDER BY id DESC";
 	 			$result = mysqli_query($conn, $sql);
 
